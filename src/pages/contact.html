@@ -1,0 +1,53 @@
+<!-- title: Contact en offerte aanvragen | MSBouw Rozenburg -->
+<!-- description: Vraag een vrijblijvende offerte aan bij MSBouw in Rozenburg. Bel 06 1467 0460, mail naar info@MsBouwRozenburg.nl of gebruik het formulier. -->
+<!-- nav: contact.html -->
+<!-- bodyclass: page-contact -->
+
+<section class="page-head" aria-labelledby="page-title">
+  <div class="rail">
+    <p class="dim">Contact</p>
+    <h1 class="h1" id="page-title" data-words>Vertel wat u van plan bent</h1>
+    <p class="lead" data-reveal>Bel, mail of vul het formulier in. Een offerte is vrijblijvend.</p>
+  </div>
+  <svg class="page-head__roof" viewBox="0 0 1000 70" aria-hidden="true" focusable="false"><path pathLength="1" d="M0 68 L250 40 L250 14 L320 14 L320 32 L560 4 L1000 56"/></svg>
+</section>
+
+<section class="sec" id="offerte" aria-labelledby="form-title">
+  <div class="rail contact-grid">
+    <div>
+      <p class="dim">Direct contact</p>
+      <h2 class="h3" id="form-title" style="margin-top:1.2rem;margin-bottom:2rem">Liever eerst even praten?</h2>
+      <div class="contact-list">
+        <a href="tel:+31614670460"><small>Mobiel</small><span>06 1467 0460</span></a>
+        <a href="tel:+31181751464"><small>Vast</small><span>0181 75 14 64</span></a>
+        <a href="mailto:info@MsBouwRozenburg.nl"><small>E-mail</small><span>info@MsBouwRozenburg.nl</span></a>
+        <div><small>Plaats</small><span>Rozenburg</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="status" data-status aria-live="polite"></div>
+      <form class="form" data-offerte data-endpoint="/api/offerte" novalidate style="margin-top:1.5rem">
+        <h2 class="h3">Offerte aanvragen</h2>
+        <div class="form__row form__row--2">
+          <div class="field"><label for="naam">Naam</label><input id="naam" name="naam" type="text" autocomplete="name" required aria-describedby="naam-err"><p class="field__error" id="naam-err"></p></div>
+          <div class="field"><label for="email">E-mailadres</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err"><p class="field__error" id="email-err"></p></div>
+        </div>
+        <div class="form__row form__row--2">
+          <div class="field"><label for="telefoon">Telefoon <span class="opt">(optioneel)</span></label><input id="telefoon" name="telefoon" type="tel" autocomplete="tel" aria-describedby="telefoon-err"><p class="field__error" id="telefoon-err"></p></div>
+          <div class="field"><label for="soort">Soort werk <span class="opt">(optioneel)</span></label>
+            <select id="soort" name="soort">
+              <option value="">Kies een onderwerp</option>
+              <option>Complete renovatie</option><option>Verbouwing</option><option>Badkamer of toilet</option><option>Traprenovatie</option><option>Maatwerk timmerwerk</option><option>Gevel of buitenwerk</option><option>Dakraam of daglicht</option><option>Schadeherstel</option><option>Iets anders</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="bericht">Wat wilt u laten doen?</label><textarea id="bericht" name="bericht" required aria-describedby="bericht-err"></textarea><p class="field__error" id="bericht-err"></p></div>
+        <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <div class="form__foot">
+          <div><button class="btn btn--ink" type="submit"><span class="spinner" aria-hidden="true"></span><span>Verstuur aanvraag</span><svg class="i" aria-hidden="true" focusable="false"><use href="#arrow"/></svg></button></div>
+          <small>Uw gegevens gebruiken we alleen om op uw aanvraag te reageren. Lees de <a href="privacy.html">privacyverklaring</a>.</small>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,56 @@
+<svg class="hero__house" viewBox="60 130 580 590" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Getekende doorsnede van een woning die stap voor stap wordt gerenoveerd: sloop, timmerwerk, afwerking en oplevering">
+  <defs>
+    <pattern id="hh-tile" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="oklch(0.62 0.07 65)" stroke-width="1.2"/></pattern>
+  </defs>
+  <!-- grond -->
+  <!-- zolder -->
+  <polygon data-a="1" class="hh-attic" points="100,330 370,160 600,330"/>
+  <!-- kamers (afwerking) -->
+  <g data-a="3" class="hh-rooms"><rect x="120" y="515" width="460" height="165"/><rect x="120" y="340" width="460" height="165"/></g>
+  <!-- tegelwand en bad -->
+  <g data-a="3" class="hh-bath">
+    <rect x="400" y="372" width="175" height="133" fill="oklch(0.86 0.05 72)"/>
+    <rect x="400" y="372" width="175" height="133" fill="url(#hh-tile)"/>
+    <rect x="412" y="468" width="150" height="37" rx="14" fill="oklch(0.985 0.004 90)" stroke="oklch(0.236 0.059 263)" stroke-width="2.5"/>
+    <path d="M470 372 V398 H488" fill="none" stroke="oklch(0.751 0.13 80)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <!-- trap (afwerking): blokken per trede -->
+  <g class="hh-steps">
+    <rect data-a="3" class="st" x="190" y="656.5" width="20" height="23.5"/>
+    <rect data-a="3" class="st" x="210" y="633" width="20" height="47"/>
+    <rect data-a="3" class="st" x="230" y="609.5" width="20" height="70.5"/>
+    <rect data-a="3" class="st" x="250" y="586" width="20" height="94"/>
+    <rect data-a="3" class="st" x="270" y="562.5" width="20" height="117.5"/>
+    <rect data-a="3" class="st" x="290" y="539" width="20" height="141"/>
+    <rect data-a="3" class="st" x="310" y="515.5" width="20" height="164.5"/>
+  </g>
+  <!-- deur en ramen -->
+  <g data-a="3" class="hh-doors"><rect x="135" y="592" width="40" height="88" fill="oklch(0.5 0.07 60)"/></g>
+  <g class="hh-windows">
+    <rect data-a="4" class="win" x="450" y="560" width="90" height="75"/>
+    <rect data-a="4" class="win" x="140" y="385" width="80" height="70"/>
+    <polygon data-a="4" class="win" points="465,228 505,258 484,286 444,256"/>
+  </g>
+  <!-- houtskelet (timmerwerk) -->
+  <g class="hh-studs">
+    <path data-a="2" class="dr" pathLength="1" d="M150 680 V515"/><path data-a="2" class="dr" pathLength="1" d="M360 680 V515"/><path data-a="2" class="dr" pathLength="1" d="M420 680 V515"/><path data-a="2" class="dr" pathLength="1" d="M480 680 V515"/><path data-a="2" class="dr" pathLength="1" d="M545 680 V515"/>
+    <path data-a="2" class="dr" pathLength="1" d="M150 505 V340"/><path data-a="2" class="dr" pathLength="1" d="M235 505 V340"/><path data-a="2" class="dr" pathLength="1" d="M320 505 V340"/><path data-a="2" class="dr" pathLength="1" d="M400 505 V340"/><path data-a="2" class="dr" pathLength="1" d="M480 505 V340"/><path data-a="2" class="dr" pathLength="1" d="M550 505 V340"/>
+    <path data-a="2" class="dr" pathLength="1" d="M190 680 L330 515"/>
+  </g>
+  <!-- wanden en vloeren (sloop: het blijft over) -->
+  <g class="hh-walls">
+    <path data-a="1" class="dr" pathLength="1" d="M120 680 V330"/>
+    <path data-a="1" class="dr" pathLength="1" d="M580 680 V330"/>
+    <path data-a="1" class="dr" pathLength="1" d="M120 505 H580"/>
+    <path data-a="1" class="dr" pathLength="1" d="M120 515 H580"/>
+    <path data-a="1" class="dr" pathLength="1" d="M120 340 H580"/>
+  </g>
+  <!-- leuning (oplevering) -->
+  <path data-a="4" class="dr hh-rail" pathLength="1" d="M190 586 L330 421 M250 515 V586 M310 450 V515"/>
+  <!-- dakrand uit het logo -->
+  <path data-a="1" class="dr hh-roof" pathLength="1" d="M100 330 L215 257.6 V200 H255 V232.3 L370 160 L600 330"/>
+  <path data-a="1" class="dr hh-ground2" pathLength="1" d="M30 680 H670"/>
+</svg>
+<ol class="hero__phases" aria-hidden="true">
+  <li data-phase="0">Sloop</li><li data-phase="1">Timmerwerk</li><li data-phase="2">Afwerking</li><li data-phase="3">Oplevering</li>
+</ol>

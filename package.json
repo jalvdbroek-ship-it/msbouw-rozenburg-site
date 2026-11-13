@@ -1,0 +1,15 @@
+{
+  "name": "msbouw-rozenburg",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Statische website voor MSBouw Renovatie & Totaalverbouwing, Rozenburg",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "photos": "python tools/optimize-photos.py",
+    "start": "node server.js",
+    "contrast": "node tools/contrast.mjs",
+    "test:site": "node tools/test-site.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
