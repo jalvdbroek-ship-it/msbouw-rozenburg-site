@@ -1,6 +1,6 @@
 // Browsertest: node tools/test-site.mjs   (server moet draaien: npm start)
 import { loadPlaywright } from "./browser.mjs";
-const BASE = process.env.BASE || "http://localhost:4173";
+const BASE = (process.env.BASE || "http://localhost:4173").replace(//$/, "");
 const pages = ["index", "diensten", "projecten", "over-mij", "werkwijze", "contact", "privacy"];
 const sizes = { desktop: [1440, 900], tablet: [820, 1180], mobiel: [390, 844] };
 const { chromium } = await loadPlaywright();
